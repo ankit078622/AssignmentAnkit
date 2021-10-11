@@ -1,5 +1,5 @@
 package com.date;
-
+//2.	Write a java class to find the date of next month second Sunday by using java time API.  Using java 8 data api.
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -9,9 +9,7 @@ public class NextMonthSecondSunday {
 
 	public static void main(String args[]) {
 		LocalDateTime now = LocalDateTime.now();
-		System.out.println("First day of next month: " + now.with(TemporalAdjusters.firstDayOfNextMonth()));
-		System.out.println("First Friday in month: " + now.with(TemporalAdjusters.firstInMonth(DayOfWeek.FRIDAY)));
-
+		
 		// Custom temporal adjusters.
 		TemporalAdjuster secondSundayOfNextMonth = temporal -> {
 		    LocalDate date = LocalDate.from(temporal).plusMonths(1);

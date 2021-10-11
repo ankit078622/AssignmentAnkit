@@ -1,4 +1,5 @@
 package com.guitar.piano;
+//1.	Create two interfaces Piano & Guitar with single default method void play() with different implementations. Add single implementation class Instrument for both the interfaces. Solve method name ambiguity in Instrument class by using two different approaches.
 interface Guitar {
 	public void play();
 }
